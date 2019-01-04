@@ -12,11 +12,11 @@
 - name: HTML
   href: /html/
 
-- name: Database
-  href: /database/
+- name: Data-Analytics
+  href: /dataanalytics/
 
-- name: Mac
-  href: /mac/
+- name: Machine-Learning
+  href: /machinelearning/
 
 - name: Life
   href: /life/

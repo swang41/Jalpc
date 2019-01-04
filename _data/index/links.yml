@@ -1,18 +1,18 @@
 # links section data
-- last_name: Name 1
+- last_name: Self-Driving-Car
   first_name:
-  desc: CEO
-  website: https://www.google.com
-  email: ceo@google.com
+  desc: Udacity Nanoprogram
+  website: https://www.udacity.com/
+  email:
 
-- last_name: Donate
-  first_name: Jalpc
-  desc: Support Jalpc
-  website: http://www.jarrekk.com/donate/
-  email: me@jarrekk.com
+- last_name: CS231n
+  first_name:
+  desc: Stanford Computer Vision Course
+  website: http://cs231n.stanford.edu/
+  email:
 
-- last_name: LN
-  first_name: FN
-  desc: COO
-  website: https://github.com
-  email: coo@google.com
+- last_name: CS229
+  first_name:
+  desc: Stanford Machine Learning Course
+  website: https://see.stanford.edu/course/cs229
+  email:
