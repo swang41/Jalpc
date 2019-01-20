@@ -10,5 +10,5 @@ icon: icon-html
 ---
 
 <div> 
-    <iframe src="https://swang41.shinyapps.io/DataSciMap/" style="overflow:auto"></iframe>
+    <iframe src="https://swang41.shinyapps.io/DataSciMap/" width="1600px" height="1200px"style="overflow:auto"></iframe>
  </div>
