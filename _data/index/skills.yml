@@ -2,5 +2,5 @@
 
 label: Ability
 id : cs
-aspects: Stat & Math, GitHub, Motivation, Machine Learning, Python, Hadoop, Spark, Gym, Docker
+aspects: Stat & Math, GitHub, Motivation, Machine Learning, Python, Hadoop, Spark, Data Visualization, Docker
 percentage: 85, 70, 100, 90, 85, 50, 50, 77, 45
