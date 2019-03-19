@@ -42,3 +42,16 @@
     i18n: Master
   icon: fa-plus-square
   
+- name:
+    detail: Guangdong University of Foreign Studies
+    i18n: GDUFS
+  desc:
+    detail: Studied Mathematic analysis, Algebra, Random Process, Multivariate Analysis, Probabilty and Statistics and Ordinary differential
+    i18n: USF_Graduate_Student
+  date:
+    detail: Sep, 2008
+    i18n:
+  job:
+    detail: Bachelor of Science in Applied Mathematics
+    i18n: Bachelor
+  icon: fa-plus-square
