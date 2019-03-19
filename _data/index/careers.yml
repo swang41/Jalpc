@@ -30,7 +30,7 @@
   
  - name:
     detail: University of San Francisco
-    i18n: USF
+    i18n: USF_
   desc:
     detail: Studied Fix income, portfolio management, Equity analysis and Econometric
     i18n: USF_Graduate_Student
