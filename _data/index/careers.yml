@@ -7,7 +7,7 @@
     detail: Studying generalized linear model, Time series, Longitudinal data analysis and machine learning
     i18n: Studying_Statistics
   date:
-    detail: August, 2018 - May, 2020
+    detail: August, 2018
     i18n:
   job:
     detail: Master of Science in Applied Statistics
@@ -21,7 +21,7 @@
     detail: Simulated portfolio management on MATLAB with different scenarios. Assisted with the researching on crowding trading effects.
     i18n: USF_research_asistant
   date:
-    detail: May, 2014 - Nov, 2014
+    detail: May, 2014
     i18n:
   job:
     detail: Research Assistant
@@ -35,21 +35,21 @@
     detail: Studied Fix income, portfolio management, Equity analysis and Econometric
     i18n: USF_Graduate_Student
   date:
-    detail: August, 2013 - August, 2014
+    detail: August, 2013
     i18n:
   job:
     detail: Master of Science in Financial Analysis
     i18n: Master
   icon: fa-plus-square
   
-  - name:
+ - name:
     detail: Guangdong University of Foreign Studies
     i18n: GUFS
   desc:
     detail: Studied Mathematic analysis, Algebra, Random Process, Multivariate Analysis, Probabilty and Statistics and Ordinary differential
     i18n: USF_Graduate_Student
   date:
-    detail: Sep, 2008 - Jun, 2012
+    detail: Sep, 2008
     i18n:
   job:
     detail: Bachelor of Science in Applied Mathematics
