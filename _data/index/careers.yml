@@ -18,7 +18,7 @@
     detail: University of San Francisco
     i18n: USF
   desc:
-    detail: Simulated portfolio management on MATLAB with different scenarios. Assisted with the researching on crowding trading effects.
+    detail: Simulated portfolio management on MATLAB with different scenarios. Assisted with the researching on crowding trading effects
     i18n: USF_research_asistant
   date:
     detail: May, 2014
@@ -28,7 +28,7 @@
     i18n: Assistant
   icon: fa-plus-square
   
- - name:
+- name:
     detail: University of San Francisco
     i18n: USF_
   desc:
