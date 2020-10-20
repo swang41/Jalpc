@@ -1,0 +1,7 @@
+  
+---
+layout: blog
+title: coding_practice
+permalink: /coding_practice/
+---
+{% include category.html %}
