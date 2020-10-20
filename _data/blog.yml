@@ -6,6 +6,9 @@
 - name: Python
   href: /python/
 
+- name: Coding-Practices
+  href: /coding_practices/
+
 - name: Linux
   href: /linux/
 
