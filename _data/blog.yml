@@ -6,8 +6,8 @@
 - name: Python
   href: /python/
 
-- name: Coding
-  href: /coding/
+#- name: Coding
+#  href: /coding/
 
 - name: Linux
   href: /linux/
