@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "4.2 Swap bits"
+title:  "4.3 Reverse bits"
 date:   2020-10-23
-desc: "Swap ith bit with jth bit"
+desc: "Reverse bits of a integer by swap the front to the end, second front to the second end and etc"
 keywords: "Coding"
 categories: [PYTHON]
 tags: [python]
