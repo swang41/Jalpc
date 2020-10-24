@@ -9,7 +9,7 @@ tags: [python]
 icon: icon-html
 ---
 
-
+```
 '''
 Background: The parity of a binary words is 1 if the number of 1s in the word is odd; otherwise, it is 0.
 '''
@@ -76,4 +76,4 @@ Get the least significant bit
 x -= x & ~(x-1)
 
 '''
-
+```
