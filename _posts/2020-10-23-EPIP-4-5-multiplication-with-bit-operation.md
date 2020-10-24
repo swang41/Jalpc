@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "4.2 Swap bits"
+title:  "4.5 Integer multiplication by bit operation"
 date:   2020-10-23
-desc: "Swap ith bit with jth bit"
+desc: "Implementing integer multiplication with bit operation only"
 keywords: "Coding"
 categories: [PYTHON]
 tags: [python]
