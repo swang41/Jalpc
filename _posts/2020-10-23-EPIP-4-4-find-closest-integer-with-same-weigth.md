@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "4.2 Swap bits"
+title:  "4.4 Find closest integer with same weight"
 date:   2020-10-23
-desc: "Swap ith bit with jth bit"
+desc: "Find closest integer with same weight, the weight is the number of bit with 1"
 keywords: "Coding"
 categories: [PYTHON]
 tags: [python]
