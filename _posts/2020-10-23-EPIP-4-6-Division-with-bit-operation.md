@@ -67,15 +67,16 @@ return quote
 ```
 #Better solution for bitwise division, assume 32-bit integer
 
-quote, power, y_power = 0, 32, y << 32
-while x >= y:
-  while y_power > x:
-    y_power = y_power >> 1
-    power -= 1
-  quote += 1 << power
-return quote
+def divide(x, y):
+  quote, power, y_power = 0, 32, y << 32
+  while x >= y:
+    while y_power > x:
+      y_power = y_power >> 1
+      power -= 1
+    x -= y_power
+    quote += 1 << power
+  return quote
 ```
 
   
-
-
+<iframe height="400px" width="100%" src="https://repl.it/@swang88/46bitwisedivision?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
