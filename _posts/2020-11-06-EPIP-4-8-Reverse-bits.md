@@ -31,11 +31,12 @@ def reverse_digit(x):
   '''
   res, base = 0, 1
   if x < 0:
-    x_abs = x
-  while x_abs > 0:
-    digit = x_abs % 10
-    res += digit * base
+    remaining_x = x
+  while remaining_x > 0:
+    res += (remaining_x % 10) * base
     base *- 10
+    remaining_x //= 10
+    
   return res
     
 ```
