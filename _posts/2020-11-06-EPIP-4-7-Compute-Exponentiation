@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "4.7 Compute x^y while x is double and y is integer"
+date:   2020-10-23
+desc: "Write a program that a double x and an integer y and return x^y"
+keywords: "Coding"
+categories: [PYTHON]
+tags: [python]
+icon: icon-html
+---
+
+Problem: Write a program that takes a double x and an integer y and returns x^y. You can ignore overflow and underflow.
+
+```
+def power(x,y):
+  if y < 0:
+    x = 1.0/x
+  result, base = 1, x
+  while y:
+    if y & 1:
+      result *= base
+    base = base << 1
+  return result
+```
