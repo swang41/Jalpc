@@ -16,6 +16,7 @@ Problem: Given two positive integers, compmute their quotient, using only the ad
 brute force: subtract 10 or its remainder by 3 till the remainder less than 3, but there are not bitwise subtraction availble.
 burte force(work around): keep adding 3 till the sum is about to exceed 10, bitwise addition is available.
 
+```
 *Revisit:bitwise addition*
 10 + 3 ... 00001010 + 00000011
 sum <- 0
@@ -32,7 +33,9 @@ while remainings of both integers after right 1 aren't 0:
   carryin <- carryout << 1
   k <- k << 1
 sum <- sum | carryin
+```
 
+```
 *Revisit:bitwise multiplication*
 10 * 3 = 30 ... 00001010 * 00000011 = 00011110
 draft: 00001010 + (00001010 << 1) = 00011110
@@ -44,7 +47,33 @@ while temp_b:
     running_sum = bitwise_add(running_sum, multiplier)
    multiplier = multiplier << 1
    temp_b = temp_b >> 1
+```
 
+```
+#My first approach for bitwise division
+Problem: x/y ... both x and y are integer
+quote = 0
+while x >= y:
+  power = 1
+  subtract = y
+  while subtract < x:
+    power += 1
+    subtract = substract << 1
+  power -= 1
+  quote += subtract
+return quote
+```
+
+```
+#Better solution for bitwise division, assume 32-bit integer
+
+quote, power, y_power = 0, 32, y << 32
+while x >= y:
+  while y_power > x:
+    y_power = y_power >> 1
+  quote += y_power
+return quote
+```
 
   
 
