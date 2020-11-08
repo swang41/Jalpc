@@ -71,7 +71,8 @@ quote, power, y_power = 0, 32, y << 32
 while x >= y:
   while y_power > x:
     y_power = y_power >> 1
-  quote += y_power
+    power -= 1
+  quote += 1 << power
 return quote
 ```
 
