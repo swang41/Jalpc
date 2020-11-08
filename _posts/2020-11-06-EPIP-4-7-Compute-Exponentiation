@@ -9,7 +9,7 @@ tags: [python]
 icon: icon-html
 ---
 
-Problem: Write a program that takes a double x and an integer y and returns x^y. You can ignore overflow and underflow.
+Problem: Write a program that takes a double x and an integer y and returns x to power of y. You can ignore overflow and underflow.
 
 ```
 def power(x,y):
