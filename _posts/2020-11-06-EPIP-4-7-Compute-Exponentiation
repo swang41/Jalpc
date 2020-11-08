@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "4.7 Compute x^y while x is double and y is integer"
+title:  "4.7 Compute x to power of y while x is double and y is integer"
 date:   2020-11-07
-desc: "Write a program that a double x and an integer y and return x^y"
+desc: "Write a program that a double x and an integer y and return x to power of y"
 keywords: "Coding"
 categories: [PYTHON]
 tags: [python]
