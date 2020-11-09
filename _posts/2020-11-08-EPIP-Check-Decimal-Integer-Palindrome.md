@@ -15,12 +15,14 @@ Problem: Write a program that takes an integer and determines if that integer's 
 def is_palindrome(i_num):
   if i_num < 0:
     return False
-  most_left, most_right = 1, 1
+  most_left = 1
   while most_left*10 < i_num:
     most_left *= 10
-  while most_left >= most_right:
-    if i_num // most_left != i_num // most_right:
+  while most_left > 1:
+    if i_num // most_left != i_num % 10:
       return False
-    most_left, most_right = most_left//10, most_right*10
+    i_num //= 10
+    i_num %= most_left
+    most_left = most_left//100
   return True
 ```
