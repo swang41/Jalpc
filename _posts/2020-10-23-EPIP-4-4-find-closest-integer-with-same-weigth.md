@@ -54,6 +54,7 @@ k2 are closest enough
 '''
 def closet_int_same_weight(x):
 	LENGTH = 64
+	i = 0
 	while i + 1 < LENGTH:
 		if (x & (1 << (i + 1))) ^ (x & (1 << i)):
 			return  (x ^ (1 << (i + 1))) ^ (1 << i))
