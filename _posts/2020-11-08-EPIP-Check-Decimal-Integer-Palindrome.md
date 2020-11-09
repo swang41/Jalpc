@@ -10,3 +10,17 @@ icon: icon-html
 ---
 
 Problem: Write a program that takes an integer and determines if that integer's representation as decimal string is a palindrome(negative integer isn't palindrome.).
+
+```
+def is_palindrome(i_num):
+  if i_num < 0:
+    return False
+  most_left, most_right = 1, 1
+  while most_left*10 < i_num:
+    most_left *= 10
+  while most_left >= most_right:
+    if i_num // most_left != i_num // most_right:
+      return False
+    most_left, most_right = most_left//10, most_right*10
+  return True
+```
