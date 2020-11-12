@@ -29,4 +29,11 @@ Expect return their interaction if it isn't empty.
       intersect = ((x1_d, y1_d), (min(x1_u, x2_u), min(y1_u, y2_u)))
     elif inside((x1_d, y1_u)):
       intersect = ((x1_d, max(y1_d, y2_u), min(y1_u, y2_u)))
+    elif inside((x1_u, y1_d)):
+      intersect = ((max(x1_d, x2_d), y1_d), (x1_u, min(y1_u, y2_u)))
+    elif inside((x1_u, y1_u)):
+      intersect = ((max(x1_d, x2_d), max(y1_d, y2_d)), (x1_u, y1_u))
+    else:
+      interset = None
+    return intersect
 ```
