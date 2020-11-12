@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "4.10 Rectangle Intersection"
-date:   2020-11-09
+date:   2020-11-11
 desc: "Find a intersection for two given rectangles"
 keywords: "Coding"
 categories: [PYTHON]
@@ -18,13 +18,22 @@ Input:
 Expect return their interaction if it isn't empty.
   
   def intersect(rect1, rect2):
-     def inside(vetex, rect):
+    def area(rect1):
+      x_d, y_d, x_u, y_u = rect
+      return (x_u-x_d)*(y_u-y_d)
+      
+    def inside(vetex, rect):
       x1, y1 = vetex
       x_d, y_d, x_u, y_u = rect
       return x_d < x1 and x1 < x_u and y_d < y1 and y1 < y_u
+    
+    if area(rect1) > area(rect2):
+      temp, rect1 = rect1, rect2
+      rect2 = temp
       
     x1_d, y1_d, x1_u, y1_u = rect1
     x2_d, y2_d, x2_u, y2_u = rect2
+    
     if inside((x1_d, y1_d):
       intersect = ((x1_d, y1_d), (min(x1_u, x2_u), min(y1_u, y2_u)))
     elif inside((x1_d, y1_u)):
@@ -56,5 +65,10 @@ def intersect(r1, r2):
 ```
 
 Variant 1: Given four points in the plane, how would you check if they are the vertices of a rectangle.
-
+```
+idea: two diaganol line has same length and two pair of opponent side have same length.
+```
 Variant 2: How would you check if two rectangles, not necessarily aligned with the X and Y axes, intersect.
+```
+idea: two rectangles not necessary aligned with X and Y axes, they are determined by at least three vertices. Then if there is a intersect, at least one vertex of the smaller rect will be inside the larger rect.
+```
