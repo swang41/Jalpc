@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "4.10 Rectangle Intersection"
+title:  "4.11 Rectangle Intersection"
 date:   2020-11-11
 desc: "Find a intersection for two given rectangles"
 keywords: "Coding"
