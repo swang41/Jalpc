@@ -9,8 +9,21 @@ tags: [python]
 icon: icon-html
 ---
 
-Problem: Write a program to move even and odd integer to opposite end in the array.
+Problem: Write a program to reorder entries in the array with integers so that the even entries appear first.
 
 ```
-
+cur, right = 0, len(arr)
+while cur < right:
+  if arr[cur] % 2 != 0:
+    while cur < right:
+      if arr[right] % 2 == 0:
+        temp = arr[cur] 
+        arr[cur] = arr[right]
+        arr[right] = temp
+        right -= 1
+        break;
+      right -= 1
+  cur += 1
+ 
+1, 2, 3, 4 --> 4, 2, 3, 1 --> Pass
 ```
