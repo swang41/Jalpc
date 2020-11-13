@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title:  "5.1 The Dutch Flag Problem"
