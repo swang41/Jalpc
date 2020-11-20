@@ -5,7 +5,7 @@ date:   2020-11-20
 desc: ""
 keywords: "machine learning"
 categories: [machinelearning]
-tags: [machinelarning]
+tags: [machinelearning]
 icon: icon-html
 ---
 
@@ -33,7 +33,8 @@ Problem I have:
 Rules I must follow:
 1. Focus on one competition at a time.
 2. There must be a time placehold for kaggle every week in my calendar.
-3. Have fun in applying idea and seeing results regardless good or bad.
+3. Post update every week on the blog.
+4. Have fun in applying idea and seeing results regardless good or bad.
 
 Current Competition:
 * Predict futures sales
