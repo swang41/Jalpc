@@ -4,8 +4,8 @@ title:  "My ground zero on machine learning"
 date:   2020-11-20
 desc: ""
 keywords: "machine learning"
-categories: [machinelearning]
-tags: [machinelearning]
+categories: [MACHINELEARNING]
+tags: [MACHINELEARNING]
 icon: icon-html
 ---
 
@@ -38,6 +38,6 @@ Rules I must follow:
 
 Current Competition:
 * Predict futures sales
-* Time line: 1 months
+* Time line: 2 months
 * Current progress: Baseline model with 0.96 mre.
 * Next step: read https://www.kaggle.com/c/competitive-data-science-predict-future-sales/discussion/74835
