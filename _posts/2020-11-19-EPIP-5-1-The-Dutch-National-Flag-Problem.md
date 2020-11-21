@@ -28,6 +28,7 @@ while left <= right:
       if A[right] <= pivot:
         A[right], A[left] = A[left], A[right]
         right -= 1
+        break
       else:
         if A[pt2] == pivot:
           A[pt2], A[right] = A[right], A[pt2]
