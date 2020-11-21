@@ -38,6 +38,6 @@ __Rules I must follow__:
 
 __Current Competition__:
 * Predict futures sales
-* Time line: 2 months
+* Timeline: 2 months
 * Current progress: Baseline model with 0.96 mre.
 * Next step: read https://www.kaggle.com/c/competitive-data-science-predict-future-sales/discussion/74835
