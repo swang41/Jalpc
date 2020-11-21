@@ -12,18 +12,30 @@ icon: icon-html
 Problem: Write a program that takes an array A and an index i into A, and rearranges the elements such that all element less than A[i](the "pivot") appear first, followed by elements equal to the pivot, followed by elements greater than the pivot.
 
 ```
-idea: simplify the problem into reorder element less than pivot at the begining and element greater than pivot at the end.
+ie: 4, 1, 3, 8, 2, 4
 pivot = A[i]
-pt1, pt2, num_eq_pivot = 0, 0, 0
-while pt2 < len(A):
-  if A[pt2] < pivot and pt2 < pt1:
-    while pt1 < len(A) and A[pt1] < pivot:
-      pt1 += 1
-    A[pt2], A[pt1] = A[pt1], A[pt2]
-  elif A[pt2] == pivot:
-    num_pivot += 1
+pt1, pt2, left, right = 0, len(A)-1, 0,len(A)-1
+while left < right:
+  if A[left] == pivot:
+    left += 1
+  elif A[left] < pivot:
+    if A[pt1] == pivot:
+      A[pt1], A[left] = A[left], A[pt1]
+    pt1 += 1
+    left += 1
   else:
+    while left < right:
+      if A[right] == pivot::
+        right -= 1
+      elif A[right] > pivot:
+        if A[pt2] == pivot:
+          A[pt2], A[right] = A[right], A[pt2]
+        pt2 -= 1
+        right -= 1
+      else:
+        A[right], A[left] = A[left], A[right]
+
     
-  
     
+        
 ```
