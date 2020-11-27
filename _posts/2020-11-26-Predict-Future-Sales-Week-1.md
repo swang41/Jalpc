@@ -34,6 +34,7 @@ __Features ideas and Ensemble:__
 * [Dance with Ensemble" Sharing Thread](https://www.kaggle.com/c/avito-demand-prediction/discussion/59880)
 
 <h3>TO-DO</h3>
+
 1. Regenerate my baseline from scratch(hold-out validation)
     1. W/features: shop_id, item_id, date_num_block
     2. Enhanced with lagged/aggregated features
