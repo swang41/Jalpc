@@ -34,9 +34,61 @@ while left <= right:
           A[pt2], A[right] = A[right], A[pt2]
         pt2 -= 1
         right -= 1
-        
-
-    
-    
-        
 ```
+
+The code above isn't neat. It need some clean up.
+
+__Solutions from EPIP in the order of efficiency and conciseness.__
+
+### O(n^2) solution:
+Idea: First move all the number smaller than pivot to the begining and then moving all the number greater than pivot to the end.
+
+```
+def dutch_flag_partition(pivot_index, A):
+  
+  pivot = A[pivot_index]
+  
+  #move all the smaller number to the begining
+  for i in range(len(A)):
+    for j in range(i+1, len(A)):
+      if A[j] < pivot:
+        A[j], A[i] = A[i], A[j]
+        break
+   
+   #move all the larger number to the end
+   for i in reversed(range(len(A))):
+    if A[i] < pivot:
+      break;
+    for j in reversed(range(i)):
+      if A[j] > pivot:
+        A[j], A[i] = A[i], A[j]
+        break
+```
+
+### O(n) solution ... two loops:
+Idea: Improve the O(n^2) by cutting down the redundant search for smaller number, visit each number once is good enough, just need to keep track of the saving position. Every time find the smaller number just switch the smaller number with the number at the saving position. then move forward for both search and saving position.
+
+```
+def dutch_flag_partition(pivot_index, A):
+  
+  pivot = A[pivot_index]
+  
+  #smaller
+  smaller = 0 #init saving position
+  for i in range(len(A)):
+    if A[i] < pivot:
+      A[i], A[smaller] = A[smaller], A[i]
+      smaller += 1
+   
+  #larger
+  larger = 0 #init saving position
+  for i in reversed(range(len(A))):
+    if A[i] > pivot:
+      A[i], A[larger] = A[larger], A[i]
+      larger += 1
+```
+
+
+### O(n) ... one while loop:
+
+
