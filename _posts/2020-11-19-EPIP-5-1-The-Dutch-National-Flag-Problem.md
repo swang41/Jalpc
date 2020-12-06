@@ -90,6 +90,7 @@ def dutch_flag_partition(pivot_index, A):
 
 
 ### O(n) ... one while loop:
+My guess:
 ```
 def dutch_flag_partition(pivot_index, A):
   
@@ -104,5 +105,23 @@ def dutch_flag_partition(pivot_index, A):
       larger -= 1
     else:
       i += 1
+```
+From the book:
+```
+def dutch_flag_partition(pivot_index, A):
+  
+  pivot = A[pivot_index]
+  smaller, equal, larger = 0, 0, len(A)
+  while equal < larger:
+    if A[i] < pivot:
+      A[i], A[smaller] = A[smaller], A[i]
+      i += 1
+      smaller += 1
+    elif A[i] == pivot:
+      i += 1
+    else:
+      larger -= 1
+      A[i], A[larger] = A[larger], A[i]
+      
 ```
 
