@@ -53,8 +53,22 @@ def dutch_flag_problem_v2(dict, A):
 
 Variant#3: Given an array A of n objects with Boolean-valued kyes, reorder the array so that objects that have the key false appear first. Use O(1) additional space and O(n) time.
 ```
-
+def dutch_flag_problem_v3(dict, A):
+  smaller = 0
+  for i in range(len(A)):
+    if not dict[A[i]]:
+      A[i], A[smaller] = A[smaller], A[i]
+      smaller += 1
 ```
 
 
 Variant#4: Given an array A of n objects with Boolean-valued keys, reorder the array so that objects that have the key false appear first. The relative ordering of objects with key true should not change. Use O(1) additional space and O(n) time.
+```
+ie: [2t 1f 2f 1t 3f 4t] --> [1f 2f 3f 1t 2t 4t]
+def dutch_flag_problem_v3(dict, A):
+  larger = len(A)-1
+  for i in reversed(range(len(A))):
+    if dict[A[i]]:
+      A[i], A[larger] = A[larger], A[i]
+      larger -= 1
+```
