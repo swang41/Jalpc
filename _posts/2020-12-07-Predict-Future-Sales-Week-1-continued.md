@@ -25,6 +25,7 @@ __Summary:__
 __EDA:__
 * [Time series Basics : Exploring traditional TS](https://www.kaggle.com/jagangupta/time-series-basics-exploring-traditional-ts)
 * [Model stacking, feature engineering and EDA](https://www.kaggle.com/dimitreoliveira/model-stacking-feature-engineering-and-eda)
+* [1st place solution part 1](https://www.kaggle.com/kyakovlev/1st-place-solution-part-1-hands-on-data)
 
 __Features ideas and Ensemble:__
 * [Future Sales 3](https://www.kaggle.com/gordotron85/future-sales-xgboost-top-3)
