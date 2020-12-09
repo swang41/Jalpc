@@ -25,3 +25,18 @@ def incre_int_arr(A):
     A[0] -= 10
     A.insert(0, 1)
 ```
+
+Corrected: the maximum result of the addition is 10.
+```
+ie: <1, 2, 9>  --> <1, 3, 0>
+idea: add 1 to the last number in the array, check the arrary from left to right if the number greater than 9, mimus by 10 and carry 1 out to the right, if the position is the first minus by 10 and insert 1 in the begining of the array.
+def incre_int_arr(A):
+  A[-1] += 1
+  for i in reversed(range(1, len(A))):
+    if A[i] == 10:
+      A[i-1] += 1
+      A[i] = 0
+  if A[0] == 10:
+    A[0] = 0
+    A.insert(0, 1)
+```
