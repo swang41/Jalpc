@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Predict Future Sales Week 1"
-date:   2020-11-26
+title:  "Predict Future Sales Week 1 continued"
+date:   2020-12-08
 desc: ""
 keywords: "machine learning"
 categories: [MACHINELEARNING]
