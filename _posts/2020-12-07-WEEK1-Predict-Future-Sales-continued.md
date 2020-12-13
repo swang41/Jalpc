@@ -36,9 +36,8 @@ __Features ideas and Ensemble:__
 
 <h3>TO-DO</h3>
 
-1. Regenerate my baseline from scratch(hold-out validation)
+__<font color="green">DONE</font>Regenerate my baseline from scratch(hold-out validation)__
     1. W/features: shop_id, item_id, date_num_block
-    2. Enhanced with lagged/aggregated features
-2. Explore the data with a few meaningful tables and plots
-    1. Why cliping is helpful in this contest?
-    2. What are the helpful features can be created?
+    2. Lag ... Lagged item_cnt_month for month/shop/item
+    3. Date ... Month
+    4. Price ... Average and variance of price for month/shop/item
