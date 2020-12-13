@@ -34,9 +34,9 @@ __Features ideas and Ensemble:__
 * [Feature engineering, xgboost](https://www.kaggle.com/dlarionov/feature-engineering-xgboost)
 * [Dance with Ensemble" Sharing Thread](https://www.kaggle.com/c/avito-demand-prediction/discussion/59880)
 
-<h3>TO-DO</h3>
+<h3>DONE</h3>
 
-__<font color="green">DONE</font>Regenerate my baseline from scratch(hold-out validation)__
+__Regenerate my baseline from scratch(hold-out validation)__
 
 1. W/features: shop_id, item_id, date_num_block
 2. Lag ... Lagged item_cnt_month for month/shop/item
@@ -46,4 +46,4 @@ __<font color="green">DONE</font>Regenerate my baseline from scratch(hold-out va
 __Result:__
 1. Current baseline model: 0.986(public score)
     * model: xgb
-        * completed: 12/13/2020
+    * completed: 12/13/2020
