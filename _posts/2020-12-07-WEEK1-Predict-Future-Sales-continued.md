@@ -12,7 +12,7 @@ icon: icon-html
 ## Current Competition:
 * Predict futures sales
 * Timeline: 2 months（01/20/2021）
-* Current progress: Baseline model with 0.986 rmse.
+* Current progress(leaderboard): 0.986 rmse.
 * Next step: [read](https://www.kaggle.com/c/competitive-data-science-predict-future-sales/discussion/74835)
 
 
@@ -47,3 +47,5 @@ __Result:__
 1. Current baseline model: 0.986(public score)
     * model: xgb
     * completed: 12/13/2020
+
+<h3>Next: Re-implement [Future Sales 3](https://www.kaggle.com/gordotron85/future-sales-xgboost-top-3)</h3>
