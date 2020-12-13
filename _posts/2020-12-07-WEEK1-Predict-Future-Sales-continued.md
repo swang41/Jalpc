@@ -42,7 +42,9 @@ __Features ideas and Ensemble:__
     2. Lag ... Lagged item_cnt_month for month/shop/item
     3. Date ... Month
     4. Price ... Average and variance of price for month/shop/item
-    
+
+Note: Switching to google colab from kaggle notebook for more consistent performance. 
+
 ## Result:
 
 * __Current baseline model: 0.986(public score)__
@@ -53,3 +55,4 @@ __Features ideas and Ensemble:__
 
 1. Re-implement the "Future Sale 3" notebook
     * [Future Sales 3](https://www.kaggle.com/gordotron85/future-sales-xgboost-top-3)
+    * ETL: by 12/20/2020
