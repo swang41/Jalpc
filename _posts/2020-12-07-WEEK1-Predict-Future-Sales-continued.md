@@ -12,7 +12,7 @@ icon: icon-html
 ## Current Competition:
 * Predict futures sales
 * Timeline: 2 months（01/20/2021）
-* Current progress: Baseline model with 0.96 mre.
+* Current progress: Baseline model with 0.986 rmse.
 * Next step: [read](https://www.kaggle.com/c/competitive-data-science-predict-future-sales/discussion/74835)
 
 
