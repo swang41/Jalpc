@@ -34,7 +34,8 @@ __Features ideas and Ensemble:__
 * [Feature engineering, xgboost](https://www.kaggle.com/dlarionov/feature-engineering-xgboost)
 * [Dance with Ensemble" Sharing Thread](https://www.kaggle.com/c/avito-demand-prediction/discussion/59880)
 
-<h3>DONE</h3>
+
+## DONE
 
 * __Regenerate my baseline from scratch(hold-out validation)__
     1. W/features: shop_id, item_id, date_num_block.
@@ -42,11 +43,13 @@ __Features ideas and Ensemble:__
     3. Date ... Month
     4. Price ... Average and variance of price for month/shop/item
     
-<h3>Result:</h3>
+## Result:
+
 * __Current baseline model: 0.986(public score)__
     * model: xgb
     * completed: 12/13/2020
 
-<h3>Next: Re-implement the "Future Sale 3" notebook</h3>
+## Next: 
 
-* [Future Sales 3](https://www.kaggle.com/gordotron85/future-sales-xgboost-top-3)
+1. Re-implement the "Future Sale 3" notebook
+    * [Future Sales 3](https://www.kaggle.com/gordotron85/future-sales-xgboost-top-3)
