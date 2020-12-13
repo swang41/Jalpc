@@ -33,7 +33,7 @@ __Features ideas and Ensemble:__
 * [Feature engineering, xgboost](https://www.kaggle.com/dlarionov/feature-engineering-xgboost)
 * [Dance with Ensemble" Sharing Thread](https://www.kaggle.com/c/avito-demand-prediction/discussion/59880)
 
-<h3>TO-DO</h3>
+<h3>Next:</h3>
 
 1. Regenerate my baseline from scratch(hold-out validation)
     1. W/features: shop_id, item_id, date_num_block
