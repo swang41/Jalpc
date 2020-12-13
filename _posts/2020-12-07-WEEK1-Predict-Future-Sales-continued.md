@@ -48,4 +48,5 @@ __Result:__
     * model: xgb
     * completed: 12/13/2020
 
-<h3>Next: Re-implement [Future Sales 3](https://www.kaggle.com/gordotron85/future-sales-xgboost-top-3)</h3>
+<h3>Next: Re-implement the "Future Sale 3" notebook</h3>
+[Future Sales 3](https://www.kaggle.com/gordotron85/future-sales-xgboost-top-3)
