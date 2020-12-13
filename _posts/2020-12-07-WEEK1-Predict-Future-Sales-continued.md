@@ -36,17 +36,17 @@ __Features ideas and Ensemble:__
 
 <h3>DONE</h3>
 
-__Regenerate my baseline from scratch(hold-out validation)__
-
-1. W/features: shop_id, item_id, date_num_block
-2. Lag ... Lagged item_cnt_month for month/shop/item
-3. Date ... Month
-4. Price ... Average and variance of price for month/shop/item
+* __Regenerate my baseline from scratch(hold-out validation)__
+    1. W/features: shop_id, item_id, date_num_block.
+    2. Lag ... Lagged item_cnt_month for month/shop/item
+    3. Date ... Month
+    4. Price ... Average and variance of price for month/shop/item
     
-__Result:__
-1. Current baseline model: 0.986(public score)
+<h3>Result:</h3>
+* __Current baseline model: 0.986(public score)__
     * model: xgb
     * completed: 12/13/2020
 
 <h3>Next: Re-implement the "Future Sale 3" notebook</h3>
-[Future Sales 3](https://www.kaggle.com/gordotron85/future-sales-xgboost-top-3)
+
+* [Future Sales 3](https://www.kaggle.com/gordotron85/future-sales-xgboost-top-3)
