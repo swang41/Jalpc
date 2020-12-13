@@ -41,3 +41,7 @@ __<font color="green">DONE</font>Regenerate my baseline from scratch(hold-out va
     2. Lag ... Lagged item_cnt_month for month/shop/item
     3. Date ... Month
     4. Price ... Average and variance of price for month/shop/item
+__Result:__
+    1. Current baseline model: 0.986(public score)
+        * model: xgb
+        * completed: 12/13/2020
