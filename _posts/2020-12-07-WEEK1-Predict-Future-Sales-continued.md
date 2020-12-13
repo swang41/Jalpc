@@ -55,4 +55,4 @@ Note: Switching to google colab from kaggle notebook for more consistent perform
 
 1. Re-implement the "Future Sale 3" notebook
     * [Future Sales 3](https://www.kaggle.com/gordotron85/future-sales-xgboost-top-3)
-    * ETL: by 12/20/2020
+    * ETA: by 12/20/2020
