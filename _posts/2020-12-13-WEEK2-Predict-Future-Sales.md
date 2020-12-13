@@ -12,15 +12,48 @@ icon: icon-html
 ## Current Competition:
 * Predict futures sales
 * Timeline: 2 months（01/20/2021）
-* Current progress: Baseline model with 0.986 rmse.
-* Next step: [read](https://www.kaggle.com/c/competitive-data-science-predict-future-sales/discussion/74835)
+* Current progress(leaderboard): 0.986 rmse.
 
 
-<h3>TO-DO</h3>
 
-__Re-implement feature ideas base on [Future Sales 3](https://www.kaggle.com/gordotron85/future-sales-xgboost-top-3)__
-    1. W/features: shop_id, item_id, date_num_block
-    2. Lag ... Lagged item_cnt_month for month/shop/item
-    3. Date ... Month
-    4. Price ... Average and variance of price for month/shop/item
-__Next: [2nd place summary - Predict future sales](https://www.kaggle.com/c/competitive-data-science-predict-future-sales/discussion/190784)__
+## DOING
+* ETA: 12/20/20
+* Re-implement the "Future Sale 3" notebook
+    * [Future Sales 3](https://www.kaggle.com/gordotron85/future-sales-xgboost-top-3)
+    * Things to do:
+        1. Data Cleanning
+            * Same shop but have different id
+            * OPTIONAL: Mis-spell in shop name and item category
+            * OPTIONAL: Item name cleaning
+        2. Features Engineering
+            * Extract city/category from shop_name
+            * Lag item_cnt_month(mean)
+                1. month/shop
+                2. month/item
+                3. month/shop/item
+                4. month/city
+                5. month/city/item
+                6. month/shop/type
+            * price
+                1. average price for item
+                2. lag price for month/item
+                3. delta ... lag_price/avg_price
+            * revenue
+                1. lag total renveue for month/shop
+                2. delta ... lag_revenue/avg_revenue
+            * Date:
+                1. Month
+                2. Days
+                3. Months of first item/shop
+                4. Months of first item
+Note: Switching to google colab from kaggle notebook for more consistent performance. 
+
+## Result:
+* __Current baseline model: ?(public score)__
+    * model: ?
+    * completed: 12/?/2020
+
+## Next: 
+* Re-implement the "top 2..." notebook
+    * Error analysis
+    * Ensemble
