@@ -1,6 +1,20 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 - name:
+    detail: Blue Shield of California
+    i18n: BSC
+  desc:
+    detail: Healthcare Company
+    i18n: Risk_Adjustment_Team
+  date:
+    detail: October, 2019
+    i18n:
+  job:
+    detail: Risk Adjustement Consoulting focus on Machine Learning
+    i18n: Data_Scientist
+  icon: fa-plus-square
+  
+- name:
     detail: California State Univerisity Long Beach
     i18n: CSULB
   desc:
