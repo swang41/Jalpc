@@ -22,7 +22,7 @@ icon: icon-html
 * Follow the summary from "2nd place summary - Predict Future Sales" notebook and recreate the 
     1. Two step model(classification --> regression) ... no improvement
     2. More features
-        * Sliding windows ... mean/quantile/std within the time(5, 7, 12) windows of item_cnt_month for shop/item 
+        * Sliding windows ... mean/quantile/std within the time(5, 7, 12) windows of item_cnt_month for shop/item [x]
         * Mean encoding ... mean of item_cnt_month for shop/item(using 32 months for train, 33 months validation, ? for test) 
         * Item name (Tfidf text feature) ... ["item_id", "item_name"]??
         * Cleaning:
