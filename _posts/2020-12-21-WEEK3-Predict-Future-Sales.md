@@ -23,7 +23,7 @@ icon: icon-html
     1. Two step model(classification --> regression) ... no improvement
     2. More features
         * Sliding windows ... mean/quantile/std within the time(5, 7, 12) windows of item_cnt_month for shop/item [x]
-        * Mean encoding ... mean of item_cnt_month for shop/item(using 32 months for train, 33 months validation, ? for test) 
+        * Mean encoding ... mean of item_cnt_month for shop/item(using 32 months for train, 33 months validation, ? for test)[SKIP ... essentially lagged feature on shop/item is already a mean ecoding feature] 
         * Item name (Tfidf text feature) ... ["item_id", "item_name"]??
         * Cleaning:
           * Fix category in "Predict Future Sales Top 11 Solution"(link)[https://www.kaggle.com/szhou42/predict-future-sales-top-11-solution]
