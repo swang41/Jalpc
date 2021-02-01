@@ -13,7 +13,7 @@ icon: icon-html
 * Predict futures sales
 * Timeline: 3 months (2/28/2021)~~2 months（01/20/2021）~~
 * Goal: Top 3%(300)
-* Current progress(leaderboard): 0.898 pls(Top 12%)
+* Current progress(leaderboard): 0.911 pls(Top 20%)
 
 ## Main Findings:
 * Found a error in the function used to generate lag feature(which has been hard coded the join key as shop/item/date) ... 0.91 --> 0.901 
@@ -65,8 +65,8 @@ icon: icon-html
       * TBD
 
 ## Result:
-* __Current baseline model: 0.898 (public score)__
-    * model: single lgb with no hypertuning ... ??
+* __Current baseline model: 0.898 ... top12% (public score)__
+    * model: single lgb with no hypertuning 
     * completed: 1/17/2022
 
 ## Next: Two main goal
