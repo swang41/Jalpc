@@ -25,19 +25,22 @@ icon: icon-html
 
    > Items that have some history but we do not have any "item/shop" match in the train data -> good example here -> "digital" items. You can find that only one shop is selling digital items, but we cannot be so sure about other items/shop pairs. Probably we can find items that we don't need to do any prediction and set 0 for them (if not -> mark it as normal items and do normal prediction).
 
-   > Items that we have no history at all. There are three options -
+   > Items that we have no history at all. There are three options
+   
    > 3.1. This is a new item -> NEW RELEASE (we don't need time series features) -> we need to predict future sales based on the type of the product and shop overall "specialty" (how many similar products were sold there) and other "categorical" features and time series features for item category but NOT for certain Item.
+   
    > 3.2. This is an old item -> OLD RELEASE, but nobody wants to buy it. Probably you can do some FE from the name of the item or category. These are totally random sales -> that depend only "how far Venus from Mars in 3/4 part of June in the year 1968" -> it is very hard to do predictions here, but we are lucky that most of such cases are close to 0.
+   
    > 3.3 Products that were not included in the train set but have some history. It is hard to recognize such products -> so I decided to remove this option.
 
    > Hope it helps. I wish to say more, but I don't want to ruin LB (still 7 moths to go).
    
    * Snapshot from Hoan Dao
   
-   After we train a model with preprocessed data and make predictions on the validation set, we calculated rmse for all shops, rmse for all items and rmse for all shop-item combines. Based on error analysis, we got an objective idea about which one causes high loss to our models. Then we find the way to track and analyze these items or ensemble highest-rmse shops presented in the section Ensemble below.
+   > After we train a model with preprocessed data and make predictions on the validation set, we calculated rmse for all shops, rmse for all items and rmse for all shop-item combines. Based on error analysis, we got an objective idea about which one causes high loss to our models. Then we find the way to track and analyze these items or ensemble highest-rmse shops presented in the section Ensemble below.
    As a result, we filtered the shops causing high loss to our models such as shop_id = [9, 20, 25, 31, 42,…]. However the shops with id = 9, 20 did not appear in the test set. So we dropped these shops from the train and validation set, just training the shops in the test set.
 
-   Override submission: after the error analysis stage, we are able to obtain the highest rmse shops (>1.0). We train and predict particularly this shop's data. Then overriding the submission file into the submission of the trained model of the full dataset. This technique helps us so much at the beginning of the competition, since the LB score could be 0.842.
+   > Override submission: after the error analysis stage, we are able to obtain the highest rmse shops (>1.0). We train and predict particularly this shop's data. Then overriding the submission file into the submission of the trained model of the full dataset. This technique helps us so much at the beginning of the competition, since the LB score could be 0.842.
    
 2. Ensemble: Given the fact that, there're only 0.01 improvment with adding/cleaning features, probably it is time to apply ensemble
     * Current full model
